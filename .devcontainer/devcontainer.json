@@ -1,0 +1,7 @@
+{
+  "name": "laravel dev container",
+  "dockerComposeFile": ["../compose.yaml"],
+  "service": "app",
+  "forwardPorts": [8080],
+  "workspaceFolder": "/var/www/app"
+}
