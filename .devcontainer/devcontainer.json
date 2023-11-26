@@ -4,6 +4,8 @@
   "service": "app",
   "forwardPorts": [8080],
   "workspaceFolder": "/var/www/app",
+  // devコンテナを閉じた時のアクション
+  "shutdownAction": "stopCompose",
   "customizations": {
     "vscode": {
       "settings": {
