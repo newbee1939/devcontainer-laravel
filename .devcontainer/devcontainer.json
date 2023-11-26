@@ -3,5 +3,20 @@
   "dockerComposeFile": ["../compose.yaml"],
   "service": "app",
   "forwardPorts": [8080],
-  "workspaceFolder": "/var/www/app"
+  "workspaceFolder": "/var/www/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+      },
+      "extensions": [
+        "mhutchie.git-graph",
+        "vscodevim.vim",
+        "Gruntfuggly.todo-tree",
+        "felixfbecker.php-intellisense",
+        "bmewburn.vscode-intelephense-client"
+      ]
+    }
+  }
 }
