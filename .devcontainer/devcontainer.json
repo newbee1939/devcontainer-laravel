@@ -7,13 +7,9 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+        "editor.tabSize": 2
       },
       "extensions": [
-        "mhutchie.git-graph",
-        "vscodevim.vim",
-        "Gruntfuggly.todo-tree",
         "felixfbecker.php-intellisense",
         "bmewburn.vscode-intelephense-client"
       ]
