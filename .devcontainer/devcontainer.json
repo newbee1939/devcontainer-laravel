@@ -3,7 +3,7 @@
   "dockerComposeFile": ["../compose.yaml"],
   "service": "app",
   "forwardPorts": [8080],
-  "workspaceFolder": "/var/www/app",
+  "workspaceFolder": "/var/www/devcontainer-laravel",
   "customizations": {
     "vscode": {
       "settings": {
