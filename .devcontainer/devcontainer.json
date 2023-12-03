@@ -17,5 +17,6 @@
   },
   // "postCreateCommand": "composer install && cp .env.example .env && php artisan key:generate"
   // "postCreateCommand": "composer install && cat .env.example | envsubst '${APP_KEY}' > .env"
-  "postCreateCommand": "composer install && envsubst < .env.example > .env"
+  "postCreateCommand": "composer install && cat .env.example | envsubst '${APP_KEY}' > .env"
+  // "postCreateCommand": "composer install && envsubst < .env.example > .env"
 }
