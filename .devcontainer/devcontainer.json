@@ -3,7 +3,7 @@
   "dockerComposeFile": ["../compose.yaml"],
   "service": "app",
   "forwardPorts": [8080],
-  "workspaceFolder": "/var/www/devcontainer-laravel",
+  "workspaceFolder": "/var/www/devcontainer-laravel/app",
   "customizations": {
     "vscode": {
       "settings": {
@@ -14,5 +14,6 @@
         "bmewburn.vscode-intelephense-client"
       ]
     }
-  }
+  },
+  "postCreateCommand": "composer install"
 }
