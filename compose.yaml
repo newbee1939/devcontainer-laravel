@@ -4,7 +4,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - .:/var/www/app
+      - .:/var/www/devcontainer-laravel
 
   db:
     image: mysql:8.0
