@@ -16,7 +16,6 @@
     }
   },
   // "postCreateCommand": "composer install && cp .env.example .env && php artisan key:generate"
-  // "postCreateCommand": "composer install && cat .env.example | envsubst '${APP_KEY}' > .env"
-  "postCreateCommand": "composer install && cat .env.example | envsubst '${APP_KEY}' > .env"
-  // "postCreateCommand": "composer install && envsubst < .env.example > .env"
+  // "postCreateCommand": "composer install && echo 'MY_SECRET_KEY=${{ secrets.MY_SECRET_KEY }}' > .env"
+  "postCreateCommand": "composer install && cp .env.example .env && echo 'APP_KEY=${{ secrets.APP_KEY }}' > .env"
 }
