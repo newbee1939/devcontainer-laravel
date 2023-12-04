@@ -15,5 +15,9 @@
       ]
     }
   },
-  "postCreateCommand": "composer install && cp .env.example .env && sed -i 's/APP_KEY=.*/APP_KEY=${{ secrets.APP_KEY }}/'"
+  "postCreateCommand": [
+    "composer install",
+    "cp .env.example .env",
+    "sed -i 's/APP_KEY=.*/APP_KEY=${{ secrets.APP_KEY }}/' .env"
+  ]
 }
